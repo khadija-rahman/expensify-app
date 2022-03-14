@@ -22,6 +22,7 @@ const withAdminWarning = (WrappedComponent) => {
     </div>
   );
 };
+//this is the higher order component - function that takes component in
 const requireAuthentication = (WrappedComponent) => {
   return (props) => (
     <div>
@@ -33,7 +34,7 @@ const requireAuthentication = (WrappedComponent) => {
     </div>
   );
 };
-
+//const newComponent = higherOrderComponent(originalComponent)
 const AdminInfo = withAdminWarning(Info);
 //require authentication
 const AuthInfo = requireAuthentication(Info);
